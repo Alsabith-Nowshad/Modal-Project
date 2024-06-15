@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+  </head>
+  <body>
+    <div class="main w-full h-screen flex items-center justify-center relative">
+      <button class="open-btn bg-teal-500 text-white px-5 py-1 rounded-full absolute">
+        Open
+      </button>
+
+      <!-- modal Div -->
+
+      <div class="modal hidden bg-black/[.1] w-full h-screen z-100 absolute z-10">
+
+        <div class="modal-sec overflow-hidden  w-[70vw] h-[65vh] bg-white shadow-lg rounded-xl absolute top-[50%] right-[50%]
+        translate-x-[50%] translate-y-[-50%] flex flex-col items-center gap-5"><i class="close ri-close-line absolute top-[2%] right-[2%] text-3xl"></i>
+
+<!-- input -->
+
+
+   <div class="input-field w-full h-[60%] bg-red-500 flex flex-col justify-center items-center shadow-lg gap-2">
+<div class="name w-[30%] flex flex-col">
+    <label for="Name" >Name : </label>
+    <input class="px-2 rounded-md shadow-lg" id="name" type="text" placeholder="Name">
+</div>
+<div class="number w-[30%] flex flex-col">
+    <label for="number">Number : </label>
+    <input class="px-2 rounded-md shadow-lg h-[30px]" id="number" type="number" placeholder="number">
+</div>
+<div class="email w-[30%] flex flex-col">
+    <label for="email">email : </label>
+    <input class="px-2 rounded-md shadow-lg " id="email" type="email" placeholder="email">
+</div>
+<div class=" select w-[30%] flex flex-col">
+    <label for="Category">Select : </label>
+    <select class="px-2 rounded-md shadow-lg h-[30px]" name="Category"  id="Category">
+        <option id="Opt1" value="Students">Students</option>
+        <option id="Opt2" value="Teachers">Teachers</option>
+        <option id="Opt3" value="Staffs">Staffs</option>
+        <option id="Opt4" value="Judge">Judge</option>
+    </select>
+</div>
+
+<!-- submit button -->
+
+<div class="btn w-[30%] flex items-center justify-end">
+<button class="submit bg-white text-red-500 font-bold h-[30px] px-3 py-1 rounded-lg mt-5">Submit</button>
+</div>
+   </div>
+
+   <!-- ticket starts -->
+    <div class="ticket hidden w-[80%] h-[30%]   px-5 py-2 mt-8">
+      <h1 class="text-2xl font-bold text-red-500 uppercase"><span class="pass-Title">Student</span> Pass</h1>
+      <div class="ticket-content  flex">
+
+      <div class="left-con w-[50%]">
+        <h2 class="Name-con text-md">Name</h2>
+      <h2 class="Number-con text-md">Number</h2>
+      <h2 class="Email-con text-md">Email</h2>
+      </div>
+      <div class="right w-[50%]  flex flex-col items-end">
+        <h3 class="prize text-2xl mr-5">$200</h3>
+        <button class="bg-red-500 text-white px-3 py-1 rounded-md">Buy Now</button>
+      </div>
+
+    </div>
+    </div>
+
+
+    </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
+

@@ -1,15 +1,19 @@
 let openBtn = document.querySelector(".open-btn")
 let modal = document.querySelector(".modal")
 let close = document.querySelector(".close")
+let modelSec = document.querySelector(".modal-sec")
+
 
 openBtn.addEventListener("click",function(){
 
     modal.style.display = "block"
+    modelSec.style.display = "block"
 })
 
 close.addEventListener("click",function(){
 
     modal.style.display = "none"
+    modelSec.style.display = "none"
 })
 
 let name =  document.getElementById("name")
@@ -57,3 +61,7 @@ submit.addEventListener("click",function(){
    }
 })
 
+modal.addEventListener("click",function(){
+    modal.style.display = "none"
+modelSec.style.display = "none"
+})
